@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In - Fire Guard</title>
+    <title>Sign Up - Fire Guard</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/sign_in.css">
+    <link rel="stylesheet" href="css/sign_up.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -14,34 +14,34 @@
 <body>
     <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
         <div class="row w-75 no-gutters">
-            <!-- Left side - Sign In Form -->
+            <!-- Left side - Sign Up Form -->
             <div class="col-md-6 bg-light p-5">
-                <h2 class="text-center mb-4">Sign In</h2>
-                <form class="sign-in-form">
+                <h2 class="text-center mb-4">Create an Account</h2>
+                <form class="sign-up-form">
+                    <!-- Full Name Field -->
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                        <label for="fullName">Full Name</label>
+                    </div>
+
+                    <!-- Email Field -->
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="email" placeholder="Example.email@gmail.com" required>
                         <label for="email">Email</label>
                     </div>
-                    <div class="form-floating mb-3">
+
+                    <!-- Password Field -->
+                    <div class="form-floating mb-3 position-relative">
                         <input type="password" class="form-control" id="password" placeholder="Enter at least 8+ characters" required>
                         <label for="password">Password</label>
                         <i id="togglePassword" class="fa fa-eye-slash position-absolute" style="top: 50%; right: 10px; cursor: pointer;"></i>
                     </div>
-                    
-                    <div class="mb-3 d-flex justify-content-between remember-forgot">
-                        <div>
-                            <input type="checkbox" class="form-check-input" id="rememberMe">
-                            <label class="form-check-label" for="rememberMe">Remember Me</label>
-                        </div>
-                        <div>
-                            <a href="#" class="text-decoration-none">Forgot password?</a>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-sm custom-btn">Sign In</button>
+
+                    <button type="submit" class="btn btn-primary btn-sm custom-btn">Sign Up</button>
 
                     <!-- Text for alternate sign-up option -->
                     <div class="text-center mt-3">
-                        <p>or sign in with</p>
+                        <p>or sign up with</p>
                     </div>
                 
                     <!-- Social Login Buttons -->
@@ -50,23 +50,23 @@
                         <button type="button" class="social-btn github-btn"><i class="fab fa-github"></i></button>
                         <button type="button" class="social-btn google-btn"><i class="fab fa-google"></i></button>
                     </div>
-                
+
                     <div class="text-center mt-3">
-                        <p>Don't have an account? <a href="sign_up.html" class="text-decoration-none">Sign Up</a></p>
+                        <p>Already have an account? <a href="sign_in.html" class="text-decoration-none">Sign In</a></p>
                     </div>
                 </form>
-                
             </div>
 
             <!-- Right side - Image -->
             <div class="col-md-6 p-0">
-                <img src="image/fireguardai-high-latest.png" alt="Sign In" class="img-fluid h-100 w-100 object-cover">
+                <img src="image/fireguardai-high-latest.png" alt="Sign Up" class="img-fluid h-100 w-100 object-cover">
             </div>
         </div>
     </div>
 
     <!-- Bootstrap JS & Custom JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script>
         // Toggle password visibility
         const togglePassword = document.getElementById('togglePassword');

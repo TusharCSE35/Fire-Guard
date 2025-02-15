@@ -1,4 +1,4 @@
-
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -6,6 +6,7 @@ body {
     padding: 0;
 }
 
+/* Centered container with shadow */
 .container-fluid {
     display: flex;
     justify-content: center;
@@ -22,16 +23,16 @@ body {
     background-color: white;
 }
 
-
+/* Left Sign Up Section */
 .bg-light {
     border-radius: 10px 0 0 10px;
     padding: 50px;
 }
 
-
+/* Form Fields */
 .form-floating {
-    max-width: 85%; 
-    margin: auto;    
+    max-width: 85%;
+    margin: auto;
 }
 
 .form-floating label {
@@ -39,41 +40,47 @@ body {
     color: black;
 }
 
+.position-relative {
+    position: relative;
+}
+
+/* Floating Labels */
 .form-floating label {
     font-weight: bold;
     color: black;
-    transform: translateY(-10px); 
-    transition: all 0.2s ease-in-out; 
-    opacity: 0.7; 
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+    opacity: 0.7;
 }
 
+/* Placeholder Style */
 .form-floating input::placeholder {
-    color: rgba(0, 0, 0, 0.5); 
-    opacity: 1; 
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
 }
 
+/* Floating label effect */
 .form-floating input:focus ~ label,
 .form-floating input:not(:placeholder-shown) ~ label {
-    transform: translateY(-20px); 
-    font-size: 12px; 
-    opacity: 1; 
+    transform: translateY(-20px);
+    font-size: 12px;
+    opacity: 1;
 }
 
-.remember-forgot {
-    max-width: 85%; 
-    margin: auto;   
-}
+
 .form-floating input {
-    height: 45px; 
+    height: 45px;
 }
 
+/* Submit Button */
 .custom-btn {
     width: 85%;
-    height: 50px; 
+    height: 50px;
     display: block;
     margin: 0 auto;
 }
 
+/* Right Image Section */
 .p-0 {
     padding: 0;
 }
@@ -85,24 +92,20 @@ body {
     width: 100%;
 }
 
-
+/* Social Login Buttons */
 .social-btn {
-    width: 100px; 
-    height: 40px; 
+    width: 100px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    font-size: 24px; 
+    font-size: 24px;
     color: white;
     border: none;
 }
-.position-relative {
-    position: relative;
-}
 
-
-.facebook-btn { background-color: #a39b86; }
+.facebook-btn { background-color: #a3a6ad; }
 .github-btn { background-color: #333; }
 .google-btn { background-color: #ce837c; }
 
@@ -110,6 +113,7 @@ body {
     opacity: 1 !important;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .row {
         width: 100%;
