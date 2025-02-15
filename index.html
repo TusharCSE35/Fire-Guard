@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Guard - Fire Safety AI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fire Guard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Alerts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Monitoring</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-danger text-white text-center p-5">
+        <h1>Welcome to Fire Guard</h1>
+        <p>Your AI-powered Fire Safety System</p>
+        <button class="btn btn-light">Get Started</button>
+    </section>
+
+    <!-- Fire Safety Monitoring Section with Bootstrap Grid -->
+    <section class="container py-5">
+        <div class="row text-center">
+            <!-- Fire Risk Card (Responsive) -->
+            <div class="col-sm-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Current Fire Risk</h5>
+                        <p id="fire-risk" class="card-text">No risk detected</p>
+                        <button class="btn btn-warning">Check Risk</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Temperature Status Card (Responsive) -->
+            <div class="col-sm-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Temperature Status</h5>
+                        <p id="temperature-status" class="card-text">Normal</p>
+                        <button class="btn btn-warning">Monitor</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Emergency Alert Card (Responsive) -->
+            <div class="col-sm-12 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Emergency Alert</h5>
+                        <p id="alert-status" class="card-text">Safe</p>
+                        <button class="btn btn-danger">Send Alert</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Fire Guard | Fire Safety AI Hackathon Project</p>
+    </footer>
+
+    <!-- Bootstrap JS & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/home.js"></script>
+</body>
+</html>

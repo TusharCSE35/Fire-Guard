@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Fire Guard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/signin.css">
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row w-100">
+            <!-- Left side - Sign In Form -->
+            <div class="col-md-6 bg-light p-5">
+                <h2 class="text-center mb-4">Sign In</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember Me</label>
+                    </div>
+                    <div class="mb-3">
+                        <a href="#" class="text-decoration-none">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 mb-3">Sign In</button>
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <button type="button" class="btn btn-outline-primary">Facebook</button>
+                        <button type="button" class="btn btn-outline-dark">GitHub</button>
+                        <button type="button" class="btn btn-outline-danger">Google</button>
+                    </div>
+
+                    <div class="text-center">
+                        <p>Don't have an account? <a href="#" class="text-decoration-none">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right side - Image -->
+            <div class="col-md-6 d-none d-md-block">
+                <img src="image/hand-drawn-fire-prevention-items_23-2149140897.avif" alt="Sign In" class="img-fluid h-100 w-100 object-cover">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS & Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
