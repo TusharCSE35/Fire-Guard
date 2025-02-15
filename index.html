@@ -3,87 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fire Guard - Fire Safety AI</title>
+    <title>FireGuard.ai - Dashboard</title>
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/home.css"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/home.css">
+   <!-- Your custom styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Fire Guard</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Alerts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Monitoring</a>
-                    </li>
-                </ul>
+            <!-- Logo in Navbar -->
+            <a class="navbar-brand" href="#">
+                <div class="logo-container">
+                    <div class="logo-circle">
+                        <img src="image/fireguardai-high-latest.png" alt="FireGuard Logo" class="logo-img">
+                    </div>
+                </div>
+            </a>
+
+            <!-- Welcome Text in the Center of Navbar -->
+            <div class="navbar-text mx-auto">
+                <h4>Welcome to FireGuard.ai</h4>
+            </div>
+
+            <!-- Profile Button -->
+            <div class="d-flex">
+                <button class="btn btn-outline-secondary">Sign In</button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero bg-danger text-white text-center p-5">
-        <h1>Welcome to Fire Guard</h1>
-        <p>Your AI-powered Fire Safety System</p>
-        <button class="btn btn-light">Get Started</button>
-    </section>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar (Left) -->
+            <div class="col-md-2 sidebar">
+                <!-- Dashboard Item -->
+                <nav class="dashboard-nav">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Item 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Item 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Item 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Item 4</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Item 5</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Logout Button at the Bottom -->
+                <div class="logout-container">
+                    <a href="#" class="nav-link logout-link">Logout</a>
+                </div>
+            </div>
 
-    <!-- Fire Safety Monitoring Section with Bootstrap Grid -->
-    <section class="container py-5">
-        <div class="row text-center">
-            <!-- Fire Risk Card (Responsive) -->
-            <div class="col-sm-12 col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Current Fire Risk</h5>
-                        <p id="fire-risk" class="card-text">No risk detected</p>
-                        <button class="btn btn-warning">Check Risk</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Temperature Status Card (Responsive) -->
-            <div class="col-sm-12 col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Temperature Status</h5>
-                        <p id="temperature-status" class="card-text">Normal</p>
-                        <button class="btn btn-warning">Monitor</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Emergency Alert Card (Responsive) -->
-            <div class="col-sm-12 col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Emergency Alert</h5>
-                        <p id="alert-status" class="card-text">Safe</p>
-                        <button class="btn btn-danger">Send Alert</button>
+            <!-- Main Content (Right) -->
+            <div class="col-md-10">
+
+                <!-- Dashboard Boxes -->
+                <div class="dashboard-boxes mt-4">
+                    <div class="row">
+                        <!-- Dashboard Box 1 (with a larger paragraph) -->
+                        <div class="col-md-6 mb-4">
+                            <div class="dashboard-box box-1">
+                                <h4>Box 1</h4>
+                                <p>This box contains a larger paragraph to show how the content looks with more text. The box height is fixed to ensure consistency across the layout. You can add more content here, and the box will maintain its shape and styling.</p>
+                            </div>
+                        </div>
+                        <!-- Dashboard Box 2 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="dashboard-box box-2">
+                                <h4>Box 2</h4>
+                                <p>Content goes here.</p>
+                            </div>
+                        </div>
+                        <!-- Dashboard Box 3 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="dashboard-box box-3">
+                                <h4>Box 3</h4>
+                                <p>Content goes here.</p>
+                            </div>
+                        </div>
+                        <!-- Dashboard Box 4 -->
+                        <div class="col-md-6 mb-4">
+                            <div class="dashboard-box box-4">
+                                <h4>Box 4</h4>
+                                <p>Content goes here.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Fire Guard | Fire Safety AI Hackathon Project</p>
-    </footer>
-
-    <!-- Bootstrap JS & Custom JS -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts/home.js"></script>
 </body>
 </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile">
+                <img src="image/fireguardai-high-latest.png" alt="Profile Picture" class="profile-pic">
+                <span class="name">FireGuard.ai</span>
+            </div>
+            <ul class="menu">
+                <li><a href="#dashboard"><i class="bi bi-house-door"></i> Dashboard</a></li>
+                <li><a href="#user-management"><i class="bi bi-person-lines-fill"></i> User Management</a></li>
+                <li><a href="#report"><i class="bi bi-bar-chart"></i> Reports</a></li>
+                <li><a href="#integration"><i class="bi bi-plug"></i> Configuration</a></li>
+                <li><a href="#notification"><i class="bi bi-bell"></i> Notification</a></li>
+                <li><a href="#logout" class="logout"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Dashboard</h1>
+                <div class="profile-sm">
+                    <img src="image/profile.png" alt="Profile Picture" class="profile-pic-sm">
+                    <div class="profile-details">
+                        <span class="name">John Doe</span>
+                        <span class="email">johndoe@example.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-boxes">
+                <div class="box box-1">
+                    <h3>Active Cameras</h3>
+                    <h1>6,452</h1>
+                    <p>5.39%</p>
+                </div>
+                <div class="box box-2">
+                    <h3>Active IOT</h3>
+                    <h1>34,988</h1>
+                    <p>4.78%</p>
+                </div>
+                <div class="box box-3">
+                    <h3>Active Sensors</h3>
+                    <h1>56201</h1>
+                    <p>3.21%</p>
+                </div>
+            </div>
+
+            <div class="stats-graph">
+                <div class="stats-header">
+                    <h3>Statistics</h3>
+                    <select id="year-select" onchange="updateStats()">
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+
+                <div class="stats-content">
+                    <h4 id="stat-heading">Mathematical Statistics for 2020</h4>
+                    <div id="stats">
+                        <!-- Animated Stats will be shown here -->
+                        <div class="stat-item">
+                            <span class="stat-name">Average: </span>
+                            <span id="avg-stat" class="stat-value">-</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-name">Sum: </span>
+                            <span id="sum-stat" class="stat-value">-</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-name">Max: </span>
+                            <span id="max-stat" class="stat-value">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="graph">
+                    <!-- Placeholder for the graph -->
+                    <h3>Graph Visualization</h3>
+                    <div  id="graph-placeholder">
+                        <img class="graph_palceholder-img" src="image/types of charts_32023-May-22-2023-10-17-23-9455-PM.jpg" alt="grap pic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>

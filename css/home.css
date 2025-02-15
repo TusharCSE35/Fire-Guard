@@ -1,52 +1,157 @@
-/* Custom styles */
-body {
-    font-family: Arial, sans-serif;
+
+/* Navbar Styles */
+body{
+    height: 90vh;
+}
+.navbar {
+    background-color: #161718; /* Navbar Background Color */
+    padding: 10px 20px;
 }
 
-.hero {
-    background-image: url('fire-banner.jpg');
-    background-size: cover;
+.navbar .navbar-text h4 {
     color: white;
-    height: 300px;
+    font-size: 50px;
+}
+
+.navbar .navbar-brand {
+    margin-left: 0; /* Align the logo to the left */
+}
+
+.navbar .navbar-brand .logo-container .logo-circle {
+    width: 80px; /* Increased logo size */
+    height: 80px; 
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+.navbar .navbar-brand .logo-container .logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar .navbar-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar .d-flex .btn {
+    margin-left: auto;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    height: auto; /* Full height */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.card {
-    margin: 10px 0;
+.dashboard-nav {
+    flex-grow: 1; /* Takes up remaining space */
 }
 
-.card-title {
-    font-size: 1.25rem;
+.dashboard-nav .nav-link {
+    color: white;
+    font-size: 16px;
+    padding: 12px 15px;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
+.dashboard-nav .nav-link:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+
+/* Logout Container at Bottom */
+.logout-container {
+    margin-top: auto; 
+    padding: 5px 8px;
+    border: 2px solid red;
+    background-color: #1e2738;
+    border-radius: 5px;
+}
+
+.logout-link {
+    color: red !important; 
+    font-weight: bold; 
+    text-align: center;
+    display: block;
+}
+
+.logout-link:hover {
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background on hover */
+    /* border-radius: 5px; */
+}
+
+/* Main Content Styles */
+.dashboard-boxes {
+    margin-top: 100px; /* Added space between navbar and dashboard boxes */
+    padding-left: 20px; /* Added left padding */
+    padding-right: 20px; /* Added right padding */
+}
+
+.dashboard-boxes .dashboard-box {
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
     width: 100%;
+    height: 250px;
 }
 
-/* Button Hover Animation */
-.btn:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease;
+/* Colorful Box Styles */
+.box-1 {
+    background-color: #fce5cd !important; 
+    color: black;
 }
 
-/* Card Hover Animation */
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+.box-2 {
+    background-color: #707d83 !important; 
+    color: black;
 }
 
-/* Responsive Layout */
-@media (max-width: 767px) {
-    .hero {
-        height: 200px;
+.box-3 {
+    background-color: #09b130 !important; 
+    color: black;
+}
+
+.box-4 {
+    background-color: #5c501c !important; 
+    color: black;
+}
+
+.box-5 {
+    background-color: #1e2738 !important; 
+    color: black;
+}
+
+.box-6 {
+    background-color: #899eca !important; 
+    color: black;
+}
+
+.dashboard-boxes .row .col-md-6 {
+    flex: 0 0 48%; /* Reduced the width of the columns */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        padding: 15px;
     }
-    .card-title {
-        font-size: 1rem;
+
+    .dashboard-boxes .row .col-md-4 {
+        flex: 0 0 100%;
+    }
+
+    /* Adjust box size for smaller screens */
+    .dashboard-boxes .dashboard-box {
+        height: 60px; /* Reduced height on smaller screens */
     }
 }

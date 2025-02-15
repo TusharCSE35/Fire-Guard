@@ -1,4 +1,3 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -6,7 +5,6 @@ body {
     padding: 0;
 }
 
-/* Centered container with shadow */
 .container-fluid {
     display: flex;
     justify-content: center;
@@ -23,28 +21,24 @@ body {
     background-color: white;
 }
 
-/* Left Sign Up Section */
 .bg-light {
     border-radius: 10px 0 0 10px;
     padding: 50px;
 }
 
-/* Form Fields */
 .form-floating {
     max-width: 85%;
     margin: auto;
 }
 
-.form-floating label {
-    font-weight: bold;
-    color: black;
+/* Input Fields */
+.form-control {
+    width: 100%; /* Takes full width of the container */
+    height: 45px;
+    padding-right: 35px; /* Make space for the password visibility icon */
 }
 
-.position-relative {
-    position: relative;
-}
-
-/* Floating Labels */
+/* Label Style */
 .form-floating label {
     font-weight: bold;
     color: black;
@@ -53,13 +47,6 @@ body {
     opacity: 0.7;
 }
 
-/* Placeholder Style */
-.form-floating input::placeholder {
-    color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
-}
-
-/* Floating label effect */
 .form-floating input:focus ~ label,
 .form-floating input:not(:placeholder-shown) ~ label {
     transform: translateY(-20px);
@@ -67,9 +54,23 @@ body {
     opacity: 1;
 }
 
+.form-floating input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
 
-.form-floating input {
-    height: 45px;
+/* Show/Hide password icon inside input */
+.position-relative {
+    position: relative;
+}
+
+/* Icon for password visibility */
+#togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 /* Submit Button */
@@ -80,7 +81,6 @@ body {
     margin: 0 auto;
 }
 
-/* Right Image Section */
 .p-0 {
     padding: 0;
 }
@@ -92,7 +92,6 @@ body {
     width: 100%;
 }
 
-/* Social Login Buttons */
 .social-btn {
     width: 100px;
     height: 40px;
