@@ -1,157 +1,61 @@
-
-/* Navbar Styles */
-body{
-    height: 90vh;
-}
-.navbar {
-    background-color: #161718; /* Navbar Background Color */
-    padding: 10px 20px;
-}
-
-.navbar .navbar-text h4 {
-    color: white;
-    font-size: 50px;
-}
-
-.navbar .navbar-brand {
-    margin-left: 0; /* Align the logo to the left */
-}
-
-.navbar .navbar-brand .logo-container .logo-circle {
-    width: 80px; /* Increased logo size */
-    height: 80px; 
-    border-radius: 50%; 
-    overflow: hidden;
-}
-
-.navbar .navbar-brand .logo-container .logo-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.navbar .navbar-text {
-    flex-grow: 1;
-    text-align: center;
-}
-
-.navbar .d-flex .btn {
-    margin-left: auto;
-}
-
-/* Sidebar Styles */
-.sidebar {
-    background-color: #343a40;
-    color: white;
-    padding: 20px;
-    height: auto; /* Full height */
+/* Fullscreen background */
+body {
+    height: 100vh;
+    margin: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
-.dashboard-nav {
-    flex-grow: 1; /* Takes up remaining space */
-}
-
-.dashboard-nav .nav-link {
-    color: white;
-    font-size: 16px;
-    padding: 12px 15px;
-}
-
-.dashboard-nav .nav-link:hover {
-    background-color: #495057;
-    border-radius: 5px;
-}
-
-/* Logout Container at Bottom */
-.logout-container {
-    margin-top: auto; 
-    padding: 5px 8px;
-    border: 2px solid red;
-    background-color: #1e2738;
-    border-radius: 5px;
-}
-
-.logout-link {
-    color: red !important; 
-    font-weight: bold; 
-    text-align: center;
-    display: block;
-}
-
-.logout-link:hover {
-    background-color: rgba(255, 0, 0, 0.1); /* Light red background on hover */
-    /* border-radius: 5px; */
-}
-
-/* Main Content Styles */
-.dashboard-boxes {
-    margin-top: 100px; /* Added space between navbar and dashboard boxes */
-    padding-left: 20px; /* Added left padding */
-    padding-right: 20px; /* Added right padding */
-}
-
-.dashboard-boxes .dashboard-box {
-    background-color: white;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    position: relative;
-    border: 2px solid #ddd;
-    margin-bottom: 10px;
+/* Dark overlay effect */
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 
-/* Colorful Box Styles */
-.box-1 {
-    background-color: #fce5cd !important; 
-    color: black;
+/* Big Heading at the Top */
+.welcome-heading {
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10%;
 }
 
-.box-2 {
-    background-color: #707d83 !important; 
-    color: black;
+/* Centered Logo Styling */
+.logo-container {
+    margin-bottom: 20px;
 }
 
-.box-3 {
-    background-color: #09b130 !important; 
-    color: black;
+.logo-img {
+    width: 220px; /* Increased size */
+    height: auto;
+    filter: drop-shadow(0 4px 6px rgba(255, 255, 255, 0.2));
 }
 
-.box-4 {
-    background-color: #5c501c !important; 
-    color: black;
+/* Sign In Button Styling */
+.signin-btn {
+    font-size: 22px;
+    padding: 14px 40px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
-.box-5 {
-    background-color: #1e2738 !important; 
-    color: black;
-}
-
-.box-6 {
-    background-color: #899eca !important; 
-    color: black;
-}
-
-.dashboard-boxes .row .col-md-6 {
-    flex: 0 0 48%; /* Reduced the width of the columns */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .sidebar {
-        padding: 15px;
-    }
-
-    .dashboard-boxes .row .col-md-4 {
-        flex: 0 0 100%;
-    }
-
-    /* Adjust box size for smaller screens */
-    .dashboard-boxes .dashboard-box {
-        height: 60px; /* Reduced height on smaller screens */
-    }
+.signin-btn:hover {
+    background-color: #ff4500;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 69, 0, 0.4);
 }

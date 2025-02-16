@@ -3,113 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FireGuard.ai - Dashboard</title>
+    <title>FireGuard.ai</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/home.css"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-   <!-- Your custom styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <!-- Logo in Navbar -->
-            <a class="navbar-brand" href="#">
-                <div class="logo-container">
-                    <div class="logo-circle">
-                        <img src="image/fireguardai-high-latest.png" alt="FireGuard Logo" class="logo-img">
-                    </div>
-                </div>
-            </a>
+<body style="background: url('image/home-2.jpg') no-repeat center center/cover; height: 100vh; margin: 0;">
 
-            <!-- Welcome Text in the Center of Navbar -->
-            <div class="navbar-text mx-auto">
-                <h4>Welcome to FireGuard.ai</h4>
+    <div class="overlay">
+        <!-- Big Heading at the Top -->
+        <h1 class="welcome-heading">Welcome to FireGuard.AI</h1>
+
+        <div class="content text-center">
+            <!-- Large Logo -->
+            <div class="logo-container">
+                <img src="image/fireguardai-high-latest.png" alt="FireGuard Logo" class="logo-img">
             </div>
 
-            <!-- Profile Button -->
-            <div class="d-flex">
-                <button class="btn btn-outline-secondary">Sign In</button>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar (Left) -->
-            <div class="col-md-2 sidebar">
-                <!-- Dashboard Item -->
-                <nav class="dashboard-nav">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Dashboard</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Item 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Item 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Item 3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Item 4</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Item 5</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- Logout Button at the Bottom -->
-                <div class="logout-container">
-                    <a href="#" class="nav-link logout-link">Logout</a>
-                </div>
-            </div>
-
-            <!-- Main Content (Right) -->
-            <div class="col-md-10">
-
-                <!-- Dashboard Boxes -->
-                <div class="dashboard-boxes mt-4">
-                    <div class="row">
-                        <!-- Dashboard Box 1 (with a larger paragraph) -->
-                        <div class="col-md-6 mb-4">
-                            <div class="dashboard-box box-1">
-                                <h4>Box 1</h4>
-                                <p>This box contains a larger paragraph to show how the content looks with more text. The box height is fixed to ensure consistency across the layout. You can add more content here, and the box will maintain its shape and styling.</p>
-                            </div>
-                        </div>
-                        <!-- Dashboard Box 2 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="dashboard-box box-2">
-                                <h4>Box 2</h4>
-                                <p>Content goes here.</p>
-                            </div>
-                        </div>
-                        <!-- Dashboard Box 3 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="dashboard-box box-3">
-                                <h4>Box 3</h4>
-                                <p>Content goes here.</p>
-                            </div>
-                        </div>
-                        <!-- Dashboard Box 4 -->
-                        <div class="col-md-6 mb-4">
-                            <div class="dashboard-box box-4">
-                                <h4>Box 4</h4>
-                                <p>Content goes here.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            <!-- Sign In Button -->
+            <button onclick="location.href='sign_in.html'" class="btn btn-light signin-btn">Sign In</button>
         </div>
     </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

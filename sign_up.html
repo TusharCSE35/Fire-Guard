@@ -17,7 +17,7 @@
             <!-- Left side - Sign Up Form -->
             <div class="col-md-6 bg-light p-5">
                 <h2 class="text-center mb-4">Create an Account</h2>
-                <form class="sign-up-form">
+                <form class="sign-up-form" id="signUpForm">
                     <!-- Full Name Field -->
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
@@ -81,6 +81,31 @@
             // Toggle the icon
             this.classList.toggle('fa-eye');
             this.classList.toggle('fa-eye-slash');
+        });
+
+        // Handle Sign Up form submission
+        const signUpForm = document.getElementById('signUpForm');
+        
+        signUpForm.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the form from submitting the traditional way
+
+            // Get the values from the input fields
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Simple validation (email, password, and full name should not be empty)
+            if (fullName === '' || email === '' || password === '') {
+                alert("Please fill in all fields!");
+            } else {
+                // Show success popup
+                alert("Successfully signed up!");
+
+                // Redirect after 1 second (1000ms)
+                setTimeout(function() {
+                    window.location.href = 'sign_in.html'; // Redirect to Sign In page
+                }, 1000);
+            }
         });
     </script>
 </body>

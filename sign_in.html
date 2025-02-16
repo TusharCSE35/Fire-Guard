@@ -17,7 +17,7 @@
             <!-- Left side - Sign In Form -->
             <div class="col-md-6 bg-light p-5">
                 <h2 class="text-center mb-4">Sign In</h2>
-                <form class="sign-in-form">
+                <form class="sign-in-form" id="signInForm">
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="email" placeholder="Example.email@gmail.com" required>
                         <label for="email">Email</label>
@@ -81,6 +81,41 @@
             this.classList.toggle('fa-eye');
             this.classList.toggle('fa-eye-slash');
         });
+
+        // Handle Sign In form submission
+        const signInForm = document.getElementById('signInForm');
+        
+        signInForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            
+            // Get the values from the input fields
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Simple validation (email and password should not be empty)
+            if (email === '' || password === '') {
+                showPopup('error', 'Please fill in all fields!');
+            } else {
+                // Assuming successful login
+                // Redirect to dashboard page
+                showPopup('success', 'Login successful!');
+                setTimeout(function () {
+                    window.location.href = 'dashboard.html'; // Change to your actual dashboard page
+                }, 2000); // 2 seconds delay before redirect
+            }
+        });
+
+        // Show Popup (success or error)
+        function showPopup(type, message) {
+            const popup = document.createElement('div');
+            popup.classList.add('popup', type);
+            popup.textContent = message;
+            document.body.appendChild(popup);
+            setTimeout(function () {
+                popup.remove();
+            }, 3000); // Remove popup after 3 seconds
+        }
     </script>
+
 </body>
 </html>
